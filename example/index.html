@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style media="screen">
+        .img-1 {
+            width: 200px;
+            height: 100px;
+        }
+        .img-2 {
+            width: 200px;
+            height: auto;
+        }
+        .img-3 {
+            width: auto;
+            height: auto;
+        }
+        .img-1,
+        .img-2,
+        .img-3 {
+            box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.6);
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <v-image :src="imgUrl1" class="img-1">Loading..</v-image>
+        <v-image :src="imgUrl2" class="img-2"></v-image>
+        <v-image :src="imgUrl3" class="img-3"></v-image>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
